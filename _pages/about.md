@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: Researcher, <a href='https://uril.cs.ucla.edu/'> UCLA Robot Intelligence Lab </a> \n Robotics Intern, <a href='https://hawkrobo.com/'> HawkRobo Systems </a>
+subtitle: Researcher, <a href='https://uril.cs.ucla.edu/'> UCLA Robot Intelligence Lab </a> <\n> Robotics Intern, <a href='https://hawkrobo.com/'> HawkRobo Systems </a>
 
 profile:
   align: right
@@ -15,7 +15,7 @@ profile:
     <p>Los Angeles, CA 90095</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-# social: true # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 
 # announcements:
 #   enabled: true # includes a list of news items
@@ -39,11 +39,13 @@ If you are interested, reach out to me at yikeshi9248 [at] ucla.edu
 ***
 
 ## Teaching
-* **Course Grader**, *ECE 100*, UCLA (Winter 2026)
-  * Graded assignments and exams for foundational circuits course under Prof. Yang Zhang.
-* **ECE Tutor & Workshops Chair**, *IEEE-HKN*, UCLA (Fall 2025 - Present)
-  * Hosted Robotics Workshops and weekly tutoring sessions for peer engineering students.
-* **Instructional Developer**, *CS 97*, UCLA (Summer 2026)
-  * Co-authored curriculum and designed Python/mathematics materials for Generative AI summer program.
+* **Learning Assistant**, *CS 188:Introduction to Robotics*, UCLA (Winter 2026)
+* With Prof. Yuchen Cui.
+* **Teaching Assistant**, *CS 97:Generative AI*, UCLA (Summer 2026)
+* With Prof. Kai-wei Chang.
+* **Course Grader**, *ECE 100: Electrical and Electronics Circuits*, UCLA (Spring 2026)
+  * With Prof. Yang Zhang.
+
+
 
 ***
