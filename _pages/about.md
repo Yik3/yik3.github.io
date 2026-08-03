@@ -6,7 +6,7 @@ subtitle: Researcher, <a href='https://uril.cs.ucla.edu/'> UCLA Robot Intelligen
 
 profile:
   align: right
-  image: yike_photo.jpg
+  image: yike_photo.JPG
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>3103C, UCLA Robot Intelligence Lab</p>
