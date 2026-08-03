@@ -39,10 +39,10 @@ If you are interested, reach out to me at yikeshi9248 [at] ucla.edu
 ***
 
 ## Teaching
-* **Learning Assistant**, *CS 188:Introduction to Robotics*, UCLA (Winter 2026)
-| * Supervised by Prof. Yuchen Cui.
-* **Teaching Assistant**, *CS 97:Generative AI*, UCLA (Summer 2026)
-| * Supervised by Prof. Kai-wei Chang.
+* **Learning Assistant**, *CS 188: Introduction to Robotics*, UCLA (Winter 2026)
+  * Supervised by Prof. Yuchen Cui.
+* **Teaching Assistant**, *CS 97: Generative AI*, UCLA (Summer 2026)
+  * Supervised by Prof. Kai-Wei Chang.
 * **Course Grader**, *ECE 100: Electrical and Electronics Circuits*, UCLA (Spring 2026)
   * Supervised by Prof. Yang Zhang.
 * **Lab Assistant/Mentor**, *ECE 3: Introduction to Electrical Engineering*, UCLA (Fall 2024, Spring 2025, Fall 2025, Spring 2026)
