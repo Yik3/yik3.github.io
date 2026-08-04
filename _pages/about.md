@@ -9,7 +9,7 @@ profile:
   image: yike_photo.JPG
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>3103C Boelter Hall</p>
+    <p>3531C Boelter Hall</p>
     <p>UCLA Robot Intelligence Lab</p>
     <p>580 Portola Plaza</p>
     <p>Los Angeles, CA 90095</p>

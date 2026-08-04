@@ -1,81 +1,41 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Gaze-Guided Active Perception for Long Horizon Imitation Learning
+description: Human operator's gaze gives us crucial learning information to long-horizon task segmentation
+img: assets/img/gaze.png
 importance: 1
-category: work
+category: Robotics
 related_publications: true
 ---
+<!-- 下面是文字叙述部分 -->
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+### Step 1
+Data Collection(ALOHA Setup + Meta Aria Glasses)：
+* Collect Paired Human Data with leader arms and Aria Glasses. The Robot Data is exactly the same as humans since we are using teleoperation. 
+* Post Process the data with a 1D Convolution kernel as a weighted average to denoise. 
+* Synchronize the data to form datapairs for dataloaders. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+### Step 2
+Find the Goal Gaze and Dissected the task
+* Using drift, velocity, acceleration, set a tuned threshold and dissect the task into several subtasks. 
+* Since exact gaze position is very noisy from human operator, we focused on goal gaze. 
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### Step 3
+Gaze Prediction and Task Prediction
+* With the gaze signal, add a gaze-foveation: gaussain-based masks that blurs the observation thats too far from the gaze point. A task selector is then trained to select specific subtask. 
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+### Step 4
+Goal-conditioned Policy Training
+* Uses an ACT backbone with subtask and goal gaze as extra channels to the model, train the policy
+
+View our poster here:
+<br>
+
+<!-- 下面是嵌入 PDF Poster 的代码 -->
+<!-- 请将 data 和 href 里的路径替换为你实际 PDF 文件存放的路径，例如 /assets/pdf/poster.pdf -->
+
+<div class="pdf-container" style="margin-top: 30px; text-align: center;">
+    <object data="/assets/pdf/gaze_poster.pdf" type="application/pdf" width="100%" height="800px" style="border: 1px solid #ccc; border-radius: 4px;">
+        <p>Cannot view in your browser.<a href="/assets/pdf/gaze_poster.pdf">Click here to download the poster.</a></p>
+    </object>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
