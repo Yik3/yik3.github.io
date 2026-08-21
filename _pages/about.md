@@ -27,7 +27,24 @@ social: true # includes social icons at the bottom of the page
 #   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
 #   limit: 3 # leave blank to include all the blog posts
 ---
+<style>
+  /* 放大主页的段落和列表文字 */
+  article p, article li {
+    font-size: 1.3rem; /* 默认通常是 1rem，推荐在 1.1rem - 1.2rem 之间微调 */
+    line-height: 1.7;   /* 配合大字体，稍微拉宽一点行距让视觉更舒适 */
+  }
 
+  /* 如果觉得 Teaching, Selected Projects 等二级标题也不够大，可以加上这段 */
+  /* <!--
+  article h2 {
+    font-size: 2.2rem; 
+  }
+  --> */
+  /* 如果想把右侧的个人信息（地址等）也放大
+  .profile .more_info p {
+    font-size: 1.1rem;
+  } */
+</style>
 I am a senior computer engineering undergraduate student at UCLA advised by [Yuchen Cui](https://yuchencui.cc/). My primary research interests lie in robot learning and intelligent control. My previous research integrates gaze into bimanual manipulation policies to enhance long-horizon tasks, training visual-motor policies using customized and optimized data collection hardware, and designing pipelines that improves VLM Code as Policy. I interned at HawkRobo Systems where I explored a general open-door policy for in-the-wild robot dog deployment.  
 
 I started building Robots at 6. I won a first prize in WER-J world championship. In high school, I was the president of Jinling High School's VEX Robotics Club. 
