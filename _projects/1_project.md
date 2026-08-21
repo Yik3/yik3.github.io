@@ -6,6 +6,7 @@ img: assets/img/gaze.png
 importance: 1
 category: Robotics
 related_publications: true
+selected: true
 ---
 <!-- 下面是文字叙述部分 -->
 

@@ -14,7 +14,7 @@ profile:
     <p>580 Portola Plaza</p>
     <p>Los Angeles, CA 90095</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 # announcements:
@@ -51,3 +51,20 @@ If you are interested, reach out to me at yikeshi9248 [at] ucla.edu
 
 
 ***
+
+<!-- Manually call Selected Publications first -->
+<h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2>
+<div class="publications">
+  {% include selected_papers.liquid %}
+</div>
+
+<!-- Manually call Selected Projects right after -->
+<h2><a href="{{ '/projects/' | relative_url }}" style="color: inherit;">Projects</a></h2>
+<div class="projects">
+  {% assign selected_projects = site.projects | where: "selected", true | sort: "importance" %}
+  <div class="grid">
+    {% for project in selected_projects %}
+      {% include projects.liquid %}
+    {% endfor %}
+  </div>
+</div>
