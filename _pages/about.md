@@ -36,6 +36,44 @@ I am looking for a Ph.D. position in Robotics Learning or Human Robot Interactio
 
 If you are interested, reach out to me at yikeshi9248 [at] ucla.edu
 
+<!-- Manually call Selected Publications first -->
+<h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2>
+<div class="publications">
+  {% include selected_papers.liquid %}
+</div>
+
+<!-- Manually call Selected Projects right after -->
+<h2><a href="{{ '/projects/' | relative_url }}" style="color: inherit;">Selected Projects</a></h2>
+
+<div class="publications">
+  <ol class="bibliography">
+    {% assign selected_projects = site.projects | where: "selected", true | sort: "importance" %}
+    {% for project in selected_projects %}
+    <li>
+      <div class="row">
+        <!-- Left column: Thumbnail -->
+        <div class="col-sm-3 abbr">
+          {% if project.img %}
+            <a href="{{ project.url | relative_url }}">
+              <img src="{{ project.img | relative_url }}" class="teaser img-fluid z-depth-1 rounded" alt="project thumbnail">
+            </a>
+          {% endif %}
+        </div>
+        
+        <!-- Right column: Text details -->
+        <div class="col-sm-9">
+          <div class="title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></div>
+          {% if project.authors %}
+            <div class="author">{{ project.authors }}</div>
+          {% endif %}
+          <div class="periodical"><em>{{ project.description }}</em></div>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</div>
+
 ***
 
 ## Teaching
@@ -51,20 +89,3 @@ If you are interested, reach out to me at yikeshi9248 [at] ucla.edu
 
 
 ***
-
-<!-- Manually call Selected Publications first -->
-<h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2>
-<div class="publications">
-  {% include selected_papers.liquid %}
-</div>
-
-<!-- Manually call Selected Projects right after -->
-<h2><a href="{{ '/projects/' | relative_url }}" style="color: inherit;">Projects</a></h2>
-<div class="projects">
-  {% assign selected_projects = site.projects | where: "selected", true | sort: "importance" %}
-  <div class="grid">
-    {% for project in selected_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-</div>
