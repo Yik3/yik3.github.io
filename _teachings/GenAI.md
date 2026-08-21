@@ -1,7 +1,7 @@
 ---
 layout: course
 title: Generative Artificial Intelligence
-description: Special Topics in CS: Generative Artificial Intelligence. Focuses on Generative models for NLP
+description: Special Topics in CS, Generative Artificial Intelligence. Focuses on Generative models for NLP
 instructor: Prof. Kai-wei Chang
 year: 2026
 term: Summer

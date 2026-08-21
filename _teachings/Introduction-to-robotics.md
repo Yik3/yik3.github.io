@@ -1,7 +1,7 @@
 ---
 layout: course
 title: Introduction to Robotics
-description: Special Topics in CS: Robotics Intelligence. How computer scientists uses AI algorithms to control robots.
+description: Special Topics in CS, Robotics Intelligence. How computer scientists uses AI algorithms to control robots.
 instructor: Prof. Yuchen Cui
 year: 2026
 term: Winter
