@@ -2,7 +2,7 @@
 layout: page
 title: Gaze-Guided Active Perception for Long Horizon Imitation Learning
 description: Human operator's gaze gives us crucial learning information to long-horizon task segmentation
-img: assets/img/gaze.png
+img: assets/img/Gaze.gif
 importance: 1
 category: Robotics
 related_publications: true
