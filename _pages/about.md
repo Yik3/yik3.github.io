@@ -47,14 +47,16 @@ social: true # includes social icons at the bottom of the page
 </style>
 I am a senior computer engineering undergraduate student at UCLA advised by [Yuchen Cui](https://yuchencui.cc/). My primary research interests lie in robot learning and intelligent control. My previous research integrates gaze into bimanual manipulation policies to enhance long-horizon tasks, training visual-motor policies using customized and optimized data collection hardware, and designing pipelines that improves VLM Code as Policy. I interned at HawkRobo Systems where I explored a general open-door policy for in-the-wild robot dog deployment.  
 
-I started building Robots at 6. I won a first prize in WER-J world championship. In high school, I was the president of Jinling High School's VEX Robotics Club. 
+I started building Robots at 6. I won a first prize in WER-J world championship. In high school, I was the president of Jinling High School's VEX Robotics Club. I led team 20089B won a First Prize in World Championship(2021), and I led team 20089X won a First Prize and ranked Semi-Finalist in Asia Championship(2023). 
 
 I am looking for a Ph.D. position in Robotics Learning or Human Robot Interaction. I am also looking for a full-time Software Robotics Engineering position. 
 
 If you are interested, reach out to me at yikeshi9248 [at] ucla.edu
 
+***
+
 <!-- Manually call Selected Publications first -->
-<h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2>
+<h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Notable Publications</a></h2>
 <div class="publications">
   {% include selected_papers.liquid %}
 </div>
@@ -69,7 +71,7 @@ If you are interested, reach out to me at yikeshi9248 [at] ucla.edu
     <li>
       <div class="row">
         <!-- Left column: Thumbnail -->
-        <div class="col-sm-3 abbr">
+        <div class="col-sm-2 abbr">
           {% if project.img %}
             <a href="{{ project.url | relative_url }}">
               <img src="{{ project.img | relative_url }}" class="teaser img-fluid z-depth-1 rounded" alt="project thumbnail">
@@ -78,7 +80,7 @@ If you are interested, reach out to me at yikeshi9248 [at] ucla.edu
         </div>
         
         <!-- Right column: Text details -->
-        <div class="col-sm-9">
+        <div class="col-sm-10">
           <div class="title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></div>
           {% if project.authors %}
             <div class="author">{{ project.authors }}</div>
@@ -100,7 +102,7 @@ If you are interested, reach out to me at yikeshi9248 [at] ucla.edu
   * Supervised by Prof. Kai-Wei Chang.
 * **Course Grader**, *ECE 100: Electrical and Electronics Circuits*, UCLA (Spring 2026)
   * Supervised by Prof. Yang Zhang.
-* **Lab Assistant/Mentor**, *ECE 3: Introduction to Electrical Engineering*, UCLA (Fall 2024, Spring 2025, Fall 2025, Spring 2026)
+* **Lab Assistant/Mentor**, *ECE 3: Introduction to Electrical Engineering*, UCLA (Fall 2024, Spring 2025, Fall 2025, Spring 2026, Fall 2026)
   * Supervised by Prof. Dennis Briggs.
 
 
